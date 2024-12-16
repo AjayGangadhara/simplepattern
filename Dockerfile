@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the Java file to the container
-COPY SimplePattern.java /app
+COPY . .
 
 # Compile the Java program
 RUN javac SimplePattern.java
