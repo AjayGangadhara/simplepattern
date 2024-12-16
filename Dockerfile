@@ -1,5 +1,5 @@
 # Use the official OpenJDK image as the base image
-FROM openjdk:17-jdk-slim
+FROM openjdk:21-jdk-slim
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Compile the Java program
-RUN javac SimplePattern.js
+RUN javac SimplePattern.java
 
 # Define the default command to run the program
 CMD ["java", "SimplePattern"]
