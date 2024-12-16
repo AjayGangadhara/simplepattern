@@ -5,7 +5,7 @@ FROM openjdk:21-jdk-slim
 WORKDIR /app
 
 # Copy the Java file to the container
-COPY . .
+COPY SimplePattern.js
 
 # Compile the Java program
 RUN javac SimplePattern.java
