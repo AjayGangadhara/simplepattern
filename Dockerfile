@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Compile the Java program
-RUN javac SimplePattern.java
+RUN javac SimplePattern.js
 
 # Define the default command to run the program
 CMD ["java", "SimplePattern"]
